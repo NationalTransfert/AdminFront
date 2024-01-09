@@ -1,13 +1,10 @@
 <div>
-  <h1 class="font-bold text-2xl text-gray-700">BLOCKED TRANSFERS</h1>
-  <div class="w-full my-5 flex justify-between">
-    <div class=""></div>
-    <!-- <button
-      class="text-white bg-blue-400 hover:bg-blue-600 rounded border px-3 py-2 hover:shadow-md"
-    >
-      Create Transfer
-    </button> -->
-  </div>
+  <div class="mt-10 text-center">
+    <h1 class="font-bold text-2xl text-gray-700">Blocked TRANSFERS</h1>
+    <div class="flex justify-end ml-10"> <!-- Adding ml-4 for left margin -->
+      <button onclick="window.location.href='/dashboard'" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-4 py-2">Home</button>
+    </div> 
+  
 
   <div class="mt-10" *ngIf="!loading">
     <div class="overflow-x-auto relative">
