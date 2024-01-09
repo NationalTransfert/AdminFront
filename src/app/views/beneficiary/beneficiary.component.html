@@ -1,58 +1,37 @@
-<div>
-  <h1 class="font-bold text-2xl text-gray-700">Beneficiaries</h1>
+<div class="mx-auto max-w-5xl">
+
+  <div class="mt-10 text-center">
+    <h1 class="font-bold text-2xl text-gray-700">Beneficiaries</h1>
+    <div class="flex justify-end ml-10"> <!-- Adding ml-4 for left margin -->
+      <button onclick="window.location.href='/dashboard'" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-4 py-2">Home</button>
+    </div> 
 
   <div class="mt-10">
-    <table class="w-full text-sm text-left text-gray-500">
-      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-        <tr>
-          <th scope="col" class="py-3 px-6">Id</th>
-          <th scope="col" class="py-3 px-6">Nom</th>
-          <th scope="col" class="py-3 px-6">Email</th>
-          <th scope="col" class="py-3 px-6">Téléphone</th>
-          <th scope="col" class="py-3 px-6">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="bg-white border-b">
-          <th
-            scope="row"
-            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
-          >
-            123
-          </th>
-          <td class="py-4 px-6">John Doe</td>
-          <td class="py-4 px-6">jdoe@gmail.com</td>
-          <td class="py-4 px-6">076543256</td>
-          <td class="py-4 px-6 grid grid-cols-2 gap-2">
-            <button
-              class="rounded bg-red-400 text-white text-center border px-4 py-3"
-            >
-              Block
-            </button>
-            <button class="rounded bg-green-400 text-white text-center border px-4 py-3">
-              UnBlock
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="bg-white border-b"
-          *ngFor="let beneficiary of beneficiaries let i = index"
-        >
-          <th
-            scope="row"
-            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
-          >
-            123
-          </th>
-          <td class="py-4 px-6">BLOACKED</td>
-          <td class="py-4 px-6">John Doe</td>
-          <td class="py-4 px-6">12200DH</td>
-          <td class="py-4 px-6"></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="overflow-x-auto">
+      <table class="w-full sm:w-11/12 md:w-11/12 lg:w-11/12 xl:w-10/12 2xl:w-11/12 text-sm text-left text-gray-500 mx-auto">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+          <tr>
+            <th scope="col" class="py-3 px-6">Id</th>
+            <th scope="col" class="py-3 px-6">Nom</th>
+            <th scope="col" class="py-3 px-6">Email</th>
+            <th scope="col" class="py-3 px-6">Téléphone</th>
+            <th scope="col" class="py-3 px-6">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white border-b">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">123</th>
+            <td class="py-4 px-6">John Doe</td>
+            <td class="py-4 px-6">jdoe@gmail.com</td>
+            <td class="py-4 px-6">076543256</td>
+            <td class="py-4 px-6 grid grid-cols-2 gap-2">
+              <button class="rounded bg-red-400 text-white text-center border px-4 py-3">Block</button>
+              <button class="rounded bg-green-400 text-white text-center border px-4 py-3">UnBlock</button>
+            </td>
+          </tr>
+          <!-- Additional table rows here -->
+        </tbody>
+      </table>
+    </div>
   </div>
-  <!-- <div class="" !="" *ngIf="loading">
-    <app-spinner></app-spinner>
-  </div> -->
 </div>
